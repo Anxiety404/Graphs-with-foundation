@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="css/test.css">
+    <title>Index</title>
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li class="menu-text">Foundation</li>
+                <li><a href="#">One</a></li>
+                <li><a href="#">Two</a></li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li><input type="search" placeholder="Search"></li>
+                <li><button type="button" class="button">Search</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <span class="badge primary">1</span>
+    <span class="badge secondary">2</span>
+    <span class="badge success">3</span>
+    <span class="badge alert">A</span>
+    <span class="badge warning">B</span>
+    
+    <!-- we can use the foundation grid system to create a responsive layout -->
+    <main class="grid-container">
+        <section class="grid-x grid-margin-x">
+            <div class="cell small-12 medium-6 large-4">
+                <div class="card">
+                    <div class="card-divider">
+                        <h4>Card Title</h4>
+                    </div>
+                    <img src="https://picsum.photos/400/200" alt="">
+                    <div class="card-section">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cell small-12 medium-6 large-4">
+                <div class="card">
+                    <div class="card-divider">
+                        <h4>Card Title</h4>
+                    </div>
+                    <img src="https://picsum.photos/400/200" alt="">
+                    <div class="card-section">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cell small-12 medium-6 large-4">
+                <div class="card">
+                    <div class="card-divider">
+                        <h4>Card Title</h4>
+                    </div>
+                    <img src="https://picsum.photos/400/200" alt="">
+                    <div class="card-section">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+                <!--card's socail icons-->
+    <div class="card-user-social">
+        <ul class="menu">
+          <li class="fa fa-twitter"></li>
+          <li class="fa fa-dribbble"></li>
+          <li class="fa fa-instagram"></li>
+          <li class="fa fa-github"></li>
+        </ul>
+      </div>
+      <div class="card-user-container">
+        <div class="card-user-avatar">
+          <img src="https://placehold.it/350x350" alt="" class="user-image">
+        </div>
+        <div class="card-user-social">
+          <ul class="menu">
+            <li class="fa fa-twitter"></li>
+            <li class="fa fa-dribbble"></li>
+            <li class="fa fa-instagram"></li>
+            <li class="fa fa-github"></li>
+          </ul>
+        </div>
+        <div class="card-user-bio">
+          <h4>User Name</h4>
+          <p>UX/UI ,Front-end developer, Foundation interested. </p>
+          <span class="location"><span class="location-icon fa fa-map-marker"></span><span class="location-text">Snezhinka</span></span>
+        </div>
+        <div class="card-user-button">
+          <a href="#" class="button">FOLLOW</a>
+        </div>
+      </div>
+      <main
+        class="flex-1 bg-gray-900 flex gap-4 flex-col lg:flex-row ml-0 lg:ml-42"
+      >
+        <section
+          class="w-full lg:flex-1 p-4 space-y-6 bg-gray-800 flex flex-col rounded-lg"
+        >
+          <div class="bg-gray-700 p-5 rounded-md">
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center space-x-3">
+                <i class="bx bx-trending-up text-teal-400 text-2xl"></i>
+                <h2 class="text-lg font-semibold text-gray-100">
+                  Revenue Flow
+                </h2>
+              </div>
+              <span class="text-xl font-bold text-gray-100">$24,300</span>
+            </div>
+            <canvas id="revenueFlowChart" class="w-full"></canvas>
+          </div>
+
+          <div class="flex gap-4 flex-col md:flex-row">
+            <div
+              class="bg-gray-700 p-5 flex-1 rounded-md flex items-center justify-between"
+            >
+              <div
+                class="flex md:items-center gap-2 flex-col lg:flex-row items-start"
+              >
+                <i class="bx bx-dollar-circle text-teal-400 text-2xl"></i>
+                <h2 class="text-sm md:text-lg font-semibold text-gray-100">
+                  Income
+                </h2>
+              </div>
+              <div
+                class="text-xl font-bold text-gray-100 flex flex-col items-end lg:flex-row lg:items-center gap-2"
+              >
+                <span class="text-sm lg:text-lg">$15,200</span>
+                <span class="text-green-400 text-sm">+8%</span>
+              </div>
+            </div>
+            <div
+              class="bg-gray-700 p-4 md:p-5 flex-1 rounded-md flex items-center justify-between"
+            >
+              <div
+                class="flex md:items-center gap-2 flex-col lg:flex-row items-start"
+              >
+                <i class="bx bx-cart text-teal-400 text-2xl"></i>
+                <h2 class="text-sm md:text-lg font-semibold text-gray-100">
+                  Expenses
+                </h2>
+              </div>
+              <div
+                class="text-xl font-bold text-gray-100 flex flex-col items-end lg:flex-row lg:items-center gap-2"
+              >
+                <span class="text-sm lg:text-lg">$6,700</span>
+                <span class="text-red-400 text-sm">-5%</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="w-full lg:w-[300px] p-4 flex flex-col justify-between gap-4 bg-gray-800 rounded-lg"
+        >
+
+          <div
+            class="bg-gradient-to-r from-teal-500 to-blue-600 p-5 rounded-lg text-white"
+          >
+            <h3 class="text-xl font-semibold mb-2">Credit Card</h3>
+            <p class="text-sm mb-4">Valid Thru: 12/25</p>
+            <div class="mb-6">
+              <span class="block text-lg font-bold tracking-wide"
+                >•••• •••• •••• 1234</span
+              >
+            </div>
+            <div class="flex justify-between">
+              <div>
+                <span class="text-xs uppercase text-gray-200">Card Holder</span>
+                <p class="text-lg font-medium">John Doe</p>
+              </div>
+              <div>
+                <span class="text-xs uppercase text-gray-200">Balance</span>
+                <p class="text-lg font-medium">$5,300</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-700 p-5 rounded-md overflow-hidden">
+            <div class="flex items-center justify-between mb-4">
+              <i class="bx bx-wallet text-teal-400 text-2xl"></i>
+              <h2 class="text-lg font-semibold text-gray-100">Available</h2>
+            </div>
+            <div class="flex justify-center px-10 overflow-hidden">
+              <canvas
+                id="availableBalanceChart"
+                class="w-20 md:w-32 lg:w-40"
+              ></canvas>
+            </div>
+          </div>
+        </section>
+        </section>
+    </main>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/foundation-sites/dist/js/foundation.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test2</title>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/mystyles.css" />
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/vendor/snap.svg.js"></script>
+    <script src="js/jquery.pizza.js"></script>
+    <script src="js/app-dashboard-layout.js" defer></script>
+  </head>
+  <body>
+    <div class="top-bar" id="realEstateMenu">
+      <div class="top-bar-left">
+        <ul class="menu" data-responsive-menu="accordion">
+          <li class="menu-text">Foundation | site</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><input type="search" placeholder="Search" /></li>
+          <li><a href="#">My Account</a></li>
+          <li>
+            <div class="columns shrink app-dashboard-top-bar-actions">
+              <button href="#" class="button hollow">Logout</button>
+              <a href="#" height="30" width="30" alt=""
+                ><i class="fa fa-info-circle"></i
+              ></a>
+            </div>
+          </li>
+          <li><a class="button">Login</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="app-dashboard shrink-medium">
+      <div class="app-dashboard-body off-canvas-wrapper">
+        <div
+          id="app-dashboard-sidebar"
+          class="app-dashboard-sidebar position-left off-canvas off-canvas-absolute reveal-for-medium"
+          data-off-canvas
+        >
+          <div class="app-dashboard-sidebar-title-area">
+            <div class="app-dashboard-close-sidebar">
+              <h3
+                class="app-dashboard-sidebar-block-title mb-4 w-full flex-col"
+              
+              >
+                Cookie <i class="large fa fa-cookie"></i
+                  > sanctuary
+              </h3>
+              <!-- Close button -->
+              <button
+                id="close-sidebar"
+                data-app-dashboard-toggle-shrink
+                class="app-dashboard-sidebar-close-button show-for-medium"
+                aria-label="Close menu"
+                type="button"
+              >
+                <span aria-hidden="true"
+                  ><a href="#"><i class="large fa fa-angle-double-left"></i></a
+                ></span>
+              </button>
+            </div>
+            <div class="app-dashboard-open-sidebar">
+              <button
+                id="open-sidebar"
+                data-app-dashboard-toggle-shrink
+                class="app-dashboard-open-sidebar-button show-for-medium"
+                aria-label="open menu"
+                type="button"
+              >
+                <span aria-hidden="true"
+                  ><a href="#"><i class="large fa fa-angle-double-right"></i></a
+                ></span>
+              </button>
+            </div>
+          </div>
+          <div class="app-dashboard-sidebar-inner">
+            <ul class="menu vertical">
+              <li>
+                <a href="#" class="is-active">
+                  <i class="large fa fa-institution"></i
+                  ><span class="app-dashboard-sidebar-text">Buildings</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <i class="large fa fa-hourglass"></i
+                  ><span class="app-dashboard-sidebar-text">Time</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <i class="large fa fa-industry"></i
+                  ><span class="app-dashboard-sidebar-text">Industry</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <i class="large fa fa-cookie"></i
+                  ><span class="app-dashboard-sidebar-text">Cookies</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        
+
+
+        <div
+          class="app-dashboard-body-content off-canvas-content"
+          data-off-canvas-content
+        >
+        <h1>Most common ways people might say "cookie," along with hypothetical percentages</h1>
+        <div class="card card-reveal-wrapper">
+          <button
+          id="menuButton"
+          class="text-gray-100 text-3xl lg:hidden hover:text-gray-400"
+          aria-label="Open Menu"
+        >
+
+          <ul class="bar-graph">
+            <li class="bar-graph-axis">
+              <div class="bar-graph-label">100%</div>
+              <div class="bar-graph-label">80%</div>
+              <div class="bar-graph-label">60%</div>
+              <div class="bar-graph-label">40%</div>
+              <div class="bar-graph-label">20%</div>
+              <div class="bar-graph-label">0%</div>
+            </li>
+            <li class="bar primary" style="height: 95%;" title="95">
+              <div class="percent">40<span>%</span></div>
+              <div class="description">Cookie</div>
+            </li>
+            <li class="bar secondary" style="height: 90%;" title="90">
+              <div class="percent">30<span>%</span></div>
+              <div class="description">Biscuit</div>
+            </li>
+            <li class="bar success" style="height: 80%;" title="80">
+              <div class="percent">15<span>%</span></div>
+              <div class="description">Bikkie(Australian slang)</div>
+            </li>
+            <li class="bar warning" style="height: 75%;" title="75">
+              <div class="percent">10<span>%</span></div>
+              <div class="description">Galleta (Spanish)</div>
+            </li>
+            <li class="bar alert" style="height: 40%;" title="40">
+              <div class="percent">5<span>%</span></div>
+              <div class="description">Keks (German)</div>
+            </li>
+          </ul>     
+          <i class="bx bx-menu"></i>
+        </button>
+          <div class="card-section">
+            <i class="fa fa-angle-up open-button"><span class="show-for-sr">More</span></i>
+            <p>More info</p>
+            <div class="card-reveal">
+              <span class="card-reveal-title">
+                <h4>Why these are the most common ways to say cookie</h4>
+                <i class="fa fa-angle-down close-button"><span class="show-for-sr">Close</span></i>
+              </span>
+              <p>Here is some more information. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+            </div> <!-- /.card-reveal -->
+          </div> <!-- /.card-section -->
+        </div> <!-- /.card -->
+        
+        <h1>How many bitish people say cookie</h1>
+        <div class="circle-graph" data-circle-graph data-percent="43">
+          <div class="circle-graph-progress">
+            <div class="circle-graph-progress-fill"></div>
+          </div>
+          <div class="circle-graph-percents">
+            <div class="circle-graph-percents-wrapper">
+              <span class="circle-graph-percents-number"></span>
+              <span class="circle-graph-percents-units">of 100</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card rating">
+          <div class="card-section">
+            <p class="ratings-card-header">Rate the movie Inception</p>
+            <div class="rating-block">
+              <p class="ratings-type">British accent</p>
+              <div class="rating-block-rating" data-rating>
+                <div class="star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+                    <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+                  </svg>
+                </div>
+                <div class="star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+                    <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+                  </svg>
+                </div>
+                <div class="star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+                    <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+                  </svg>
+                </div>
+                <div class="star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+                    <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+                  </svg>
+                </div>
+                <div class="star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+                    <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="rating-block">
+              <p class="ratings-type">spanish accent</p>
+              <div class="rating-block-rating" data-rating>
+                <div class="star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+                    <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+                  </svg>
+                </div>
+                <div class="star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+                    <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+                  </svg>
+                </div>
+                <div class="star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+                    <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+                  </svg>
+                </div>
+                <div class="star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+                    <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+                  </svg>
+                </div>
+                <div class="star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+                    <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="rating-block">
+              <p class="ratings-type">Relatability</p>
+              <div class="rating-block-rating" data-rating>
+                <div class="star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+                    <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+                  </svg>
+                </div>
+                <div class="star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+                    <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+                  </svg>
+                </div>
+                <div class="star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+                    <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+                  </svg>
+                </div>
+                <div class="star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+                    <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+                  </svg>
+                </div>
+                <div class="star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+                    <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="rating-block">
+              <p class="ratings-type">Performers</p>
+              <div class="rating-block-rating" data-rating>
+                <div class="star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+                    <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+                  </svg>
+                </div>
+                <div class="star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+                    <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+                  </svg>
+                </div>
+                <div class="star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+                    <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+                  </svg>
+                </div>
+                <div class="star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+                    <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+                  </svg>
+                </div>
+                <div class="star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+                    <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="rating-block">
+              <p class="ratings-type">Production</p>
+              <div class="rating-block-rating" data-rating>
+                <div class="star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+                    <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+                  </svg>
+                </div>
+                <div class="star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+                    <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+                  </svg>
+                </div>
+                <div class="star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+                    <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+                  </svg>
+                </div>
+                <div class="star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+                    <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+                  </svg>
+                </div>
+                <div class="star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+                    <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+                
+        
+
+        </div>
+      </div>
+    </div>
+
+
+    
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/foundation-sites/dist/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script src="test.scss"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/foundation-sites/dist/js/foundation.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

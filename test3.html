@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test3</title>
+    <!-- Foundation CSS -->
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <!-- Compiled CSS -->
+    <link rel="stylesheet" href="css/chart.css">
+    <link rel="stylesheet" href="stylesheets/pizza.css" media="screen, projector, print" type="text/css">
+    <link rel="stylesheet" href="css/test.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- User card example #1 -->
+    <div class="title-bar" data-responsive-toggle="realEstateMenu" data-hide-for="small">
+        <button class="menu-icon" type="button" data-toggle></button>
+        <div id="smth" class="title-bar-title">Menu</div>
+    </div>
+
+    <div class="top-bar" id="realEstateMenu">
+        <div class="top-bar-left">
+            <ul class="menu" data-responsive-menu="accordion">
+                <li class="menu-text">Foundation | site</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li><input type="search" placeholder="Search"></li>
+                <li><a href="#">My Account</a></li>
+                <li>
+                    <div class="columns shrink app-dashboard-top-bar-actions">
+                        <button class="button hollow">Logout</button>
+                        <a href="#"><i class="fa fa-info-circle"></i></a>
+                    </div>
+                </li>
+                <li><a class="button">Login</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="app-dashboard shrink-medium">
+        <div class="app-dashboard-body off-canvas-wrapper">
+            <div id="app-dashboard-sidebar" class="app-dashboard-sidebar position-left off-canvas off-canvas-absolute reveal-for-medium" data-off-canvas>
+                <div class="app-dashboard-sidebar-title-area">
+                    <div class="app-dashboard-close-sidebar">
+                        <h3 class="app-dashboard-sidebar-block-title">Items</h3>
+                        <button id="close-sidebar" class="app-dashboard-sidebar-close-button show-for-medium" aria-label="Close menu" type="button">
+                            <a href="#"><i class="large fa fa-angle-double-left"></i></a>
+                        </button>
+                    </div>
+                    <div class="app-dashboard-open-sidebar">
+                        <button id="open-sidebar" class="app-dashboard-open-sidebar-button show-for-medium" aria-label="open menu" type="button">
+                            <a href="#"><i class="large fa fa-angle-double-right"></i></a>
+                        </button>
+                    </div>
+                </div>
+                <div class="app-dashboard-sidebar-inner">
+                    <ul class="menu vertical">
+                        <li><a href="#" class="is-active">
+                            <i class="large fa fa-institution"></i> Buildings
+                        </a></li>
+                        <li><a><i class="large fa fa-hourglass"></i> Time</a></li>
+                        <li><a><i class="large fa fa-industry"></i> Industry</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="app-dashboard-body-content off-canvas-content" data-off-canvas-content>
+                <h2 class="text-center">Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti.</p>
+                <!-- Additional content can go here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Foundation JS -->
+    <script src="node_modules/foundation-sites/dist/js/foundation.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+</body>
+
+</html>
